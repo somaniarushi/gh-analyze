@@ -1,0 +1,35 @@
+Replay Client Actions After Hydration
+update broken icon link (circleCi status)
+refactor: code redundance
+refactor: code redundance
+refactor: code redundance
+refactor: Update the return pointer when enableProfilerTimer and code…
+Update createElement link reference from reactjs.org to react.dev
+Add (Client) Functions as Form Actions
+Update README.md to align with the react.dev website
+Switching checked to null should leave the current value
+Post-process build files for React Native to add generated signature and @nolint
+Bump webpack from 5.74.0 to 5.76.0 in /fixtures/flight
+Bump minimist from 1.2.3 to 1.2.6
+Bump minimist from 1.2.5 to 1.2.8 in /fixtures/ssr2
+Bump minimist from 1.2.0 to 1.2.8 in /fixtures/packaging/browserify/dev
+Bump minimist from 1.2.0 to 1.2.8 in /fixtures/packaging/browserify/prod
+Post-process build files for React Native to add generated signature and @nolint
+Bump webpack from 5.74.0 to 5.76.0 in /fixtures/flight
+Bump minimist from 1.2.3 to 1.2.6
+Bump minimist from 1.2.5 to 1.2.8 in /fixtures/ssr2
+Bump minimist from 1.2.0 to 1.2.8 in /fixtures/packaging/browserify/dev
+Bump minimist from 1.2.0 to 1.2.8 in /fixtures/packaging/browserify/prod
+Bump chrome-launcher from 0.10.5 to 0.13.2 in /scripts/bench
+Model Float on Hoistables semantics
+Bump ua-parser-js from 0.7.28 to 0.7.33 in /fixtures/concurrent/time-slicing
+Bump ua-parser-js from 0.7.23 to 0.7.33 in /fixtures/dom
+Bump ua-parser-js from 0.7.22 to 0.7.33 in /fixtures/legacy-jsx-runtimes/react-15
+Bump ua-parser-js from 0.7.22 to 0.7.33 in /fixtures/legacy-jsx-runtimes/react-14
+Bump ua-parser-js from 0.7.20 to 0.7.33
+Bump ua-parser-js from 0.7.17 to 0.7.33 in /fixtures/expiration
+Bump ua-parser-js from 0.7.14 to 0.7.33 in /fixtures/attribute-behavior
+Bump ua-parser-js from 0.7.12 to 0.7.33 in /fixtures/fiber-debugger
+Bump debug from 2.6.3 to 2.6.9 in /fixtures/art
+Bump json5 from 2.1.3 to 2.2.3 in /fixtures/legacy-jsx-runtimes
+Bump json5 from 2.1.3 to 2.2.2

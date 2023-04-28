@@ -1,0 +1,36 @@
+Partially revert to 8310854ce
+Revert to 8310854ce
+Rename HostConfig files to FiberConfig to clarify they are configs fo…
+Rename ReactServerFormatConfig to ReactFizzConfig
+Normalize ReactFlightServerConfig and related files
+[Flight][Fizz][Fiber] Refactor configs
+Limit the meaning of "custom element" to not include `is`
+Move ReactDOMFloat to react-dom/src/
+[DevTools] webpack 5 + ignore listing backend to avoid confusion
+[Float][Flight] Flight support for Float
+Delete unused DOM files
+Remote `.internal` override from untrusted URL tests
+Move internalAct to internal-test-utils package
+[Flight Fixture] Show SSR Support with CSS
+Add package.json exports for use-sync-external-store
+Split out Edge and Node implementations of the Flight Client
+Partially revert to 8310854ce
+Revert to 8310854ce
+Rename HostConfig files to FiberConfig to clarify they are configs fo…
+Rename ReactServerFormatConfig to ReactFizzConfig
+Normalize ReactFlightServerConfig and related files
+[Flight][Fizz][Fiber] Refactor configs
+Limit the meaning of "custom element" to not include `is`
+Move ReactDOMFloat to react-dom/src/
+[DevTools] webpack 5 + ignore listing backend to avoid confusion
+[Float][Flight] Flight support for Float
+Delete unused DOM files
+Remote `.internal` override from untrusted URL tests
+Move internalAct to internal-test-utils package
+[Flight Fixture] Show SSR Support with CSS
+Add package.json exports for use-sync-external-store
+Split out Edge and Node implementations of the Flight Client
+Create a bunch of custom webpack vs unbundled node bundles
+Update Flight Fixture to "use client" instead of .client.js
+Rename "dom" fork to "dom-node" and "bun" fork to "dom-bun"
+Rename experimental useEvent to useEffectEvent

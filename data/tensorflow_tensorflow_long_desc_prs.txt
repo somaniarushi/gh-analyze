@@ -1,0 +1,1 @@
+Add handling of TensorRT's new enumeration value `nvinfer1::DataType::kFP8`
