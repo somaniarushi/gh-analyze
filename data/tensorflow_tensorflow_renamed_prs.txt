@@ -1,2 +1,3 @@
 [oneDNN] Enabling optimized implementation for FP32 Eigen Leakyrelu
 Fixes to build and run TFLite evaluation ios app
+Performance Enhancements for Sparse Embedding Lookups

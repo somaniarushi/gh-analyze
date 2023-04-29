@@ -1,0 +1,1 @@
+Add support for up to 24 bracket pair colorization colors

@@ -1,0 +1,2 @@
+Replace several (test-)tool binaries with symlinks to swift-frontend
+[5.9] Introduce `-unavailable-decl-optimization=stub`

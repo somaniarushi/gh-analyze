@@ -1,0 +1,11 @@
+edit readme
+Rename README to README.md
+Devrezz
+5.0
+Add compatibility to upboard/upsquared to blokas Pisound raspberry hat. 
+Added new changes to README.md
+Update and rename README to README.rst
+ASoC:SOF Topic/remove duplicated defines
+corrected CoC typos
+Rename README to README.md
+Tcp wave 14 maintenance

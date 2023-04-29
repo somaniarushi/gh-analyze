@@ -1,0 +1,8 @@
+Refactor test helpers
+fix(53467): extends keyword not suggested inside of generic
+🤖 Pick PR #53547 (Fix double-emit in constructor) into release-5.0
+Reset type resolution stack when starting to compute variance
+Fix double-emit in constructor
+Create baselines for tsserver event tests
+Revert PR #52589
+fix: also respect compilerOptions.moduleResolution for ending preferences

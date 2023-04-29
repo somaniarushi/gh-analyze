@@ -1,0 +1,4 @@
+Singular django 4.1 backwards compatible
+[4.1.x] Inspectdb can process foreign keys that are outside database (MariaDb/Mysql)
+Stable/4.1.x #loophole #serious
+ [4.2] Added support for JSON body handling.

@@ -1,0 +1,7 @@
+[SPARK-43292][CORE][CONNECT] Move `ExecutorClassLoader` to `core` module and simplify `Executor#addReplClassLoaderIfNeeded`
+[SPARK-43280][BUILD] Reimplement the protobuf breaking change checker
+[SPARK-43266][SQL] Move MergeScalarSubqueries to spark-sql
+[SPARK-43265] Move Error framework to a common utils module
+[SPARK-41210][K8S] Port executor failure tracker from Spark on YARN to K8s
+[SPARK-42953][Connect][Followup] Fix maven test build for Scala client UDF tests
+[SPARK-43067][SS] Correct the location of error class resource file in Kafka connector

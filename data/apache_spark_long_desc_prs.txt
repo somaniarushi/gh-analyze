@@ -1,0 +1,17 @@
+[SPARK-43308][SQL] Improve scalar subquery logic plan when result are literal
+[SPARK-43206] [SS] [CONNECT] StreamingQuery exception() include stack trace
+[SPARK-43267][JDBC] Handle postgres unknown user-defined column as string in array
+[SPARK-43277][YARN] Clean up deprecation hadoop api usage in `yarn` module
+[SPARK-43232][SQL] Improve ObjectHashAggregateExec performance for high cardinality
+[SPARK-43032][CONNECT][SS] Add Streaming query manager
+Bump jetty-server from 9.4.51.v20230217 to 10.0.14
+[SPARK-43171][K8S] Support custom Unix username in Pod
+[SPARK-42317][SQL] Assign name to _LEGACY_ERROR_TEMP_2247: CANNOT_MERGE_SCHEMAS
+[SPARK-43138][CORE]: Fix ClassNotFoundException during migration
+[SPARK-43104][BUILD] Set `shadeTestJar` of `protobuf` module to `false`
+[SPARK-43095][SQL] Avoid Once strategy's idempotence is broken for batch: `Infer Filters`
+[SPARK-43081] [ML] [CONNECT] Add torch distributor data loader that loads data from spark partition data
+[SPARK-43075][CONNECT] Change `gRPC` to `grpcio` when it is not installed. 
+[SPARK-42551][SQL] Support more subexpression elimination cases
+[SPARK-43061][CORE][SQL] Introduce PartitionEvaluator for SQL operator execution
+[SPARK-43021][SQL] `CoalesceBucketsInJoin` not work when using AQE

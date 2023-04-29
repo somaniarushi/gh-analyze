@@ -7,11 +7,12 @@ import argparse
 
 # create a Github instance
 g = Github(os.environ.get('GITHUB_TOKEN'))
-MAX_COUNT = 300
-MAX_LENGTH = 5000
 
 # loop through every pull request in the repository
-def pr_analysis(repo_name, file_name, desc_file_name, metadata_file_name=None):
+def pr_analysis(repo_name, file_name, desc_file_name, metadata_file_name, hyperparams):
+
+    MAX_COUNT = hyperparams['count']
+    MAX_LENGTH = hyperparams['length']
 
     renamed_files_pr = []
     long_description_prs = []
@@ -54,38 +55,60 @@ def pr_analysis(repo_name, file_name, desc_file_name, metadata_file_name=None):
             json.dump({
                 'repo_name': repo_name,
                 'num_renamed_prs': len(renamed_files_pr),
+                'num_long_desc_prs': len(long_description_prs),
                 'num_prs': total_prs,
             }, f)
 
     return long_description_prs, renamed_files_pr
 
+def main():
+    """
+    Main function to run analysis
+    """
+    # Parse arguments
+    parser = argparse.ArgumentParser(description='Get repo name')
+    # Required arguments
+    parser.add_argument('repo', type=str, help='Name of repo to analyze')
+
+
+    # Optional arguments
+    parser.add_argument('--prs', type=int, default=True, help='Boolean to get PRs')
+    parser.add_argument('--pr_count', type=int, default=100, help='Number of PRs to analyze')
+    parser.add_argument('--pr_length', type=int, default=1000, help='Max length of PR description')
+
+    parser.add_argument('--issues', type=int, default=True, help='Boolean to get issues')
+    parser.add_argument('--issue_count', type=int, default=100, help='Number of issues to analyze')
+
+    parser.add_argument('--commits', type=int, default=True, help='Boolean to get commits')
+    parser.add_argument('--commit_count', type=int, default=100, help='Number of commits to analyze')
+
+    parser.add_argument('--branches', type=int, default=True, help='Boolean to get comments')
+    parser.add_argument('--branch_count', type=int, default=100, help='Number of branches to analyze')
+
+    args = parser.parse_args()
+
+    # Set variables
+    repo_name = args.repo
+    MAX_COUNT = args.count
+    MAX_LENGTH = args.length
+
+    if not repo_name:
+        raise Exception('Repo name not provided')
+
+    # Create file names
+    file_name = f'./data/{repo_name.replace("/", "_")}_renamed_prs.txt'
+    desc_file_name = f'./data/{repo_name.replace("/", "_")}_long_desc_prs.txt'
+    metadata_file_name = f'./data/{repo_name.replace("/", "_")}_metadata.json'
+
+    # Create hyperparams
+    hyperparams = {
+        'count': MAX_COUNT,
+        'length': MAX_LENGTH,
+    }
+
+    # Run analysis
+    pr_analysis(repo_name, file_name, desc_file_name, metadata_file_name, hyperparams)
+
 
 if __name__ == "__main__":
-    list_of_top_oss_repos = [
-        'tensorflow/tensorflow',
-        'facebook/react'
-        'angular/angular.js',
-        'Microsoft/vscode',
-        'twbs/bootstrap',
-        'apple/swift',
-        'apache/spark',
-        'torvalds/linux',
-        'nodejs/node',
-        'ant-design/ant-design',
-        'django/django',
-        'laravel/laravel',
-        'kubernetes/kubernetes',
-        'microsoft/TypeScript',
-    ]
-    for repo in list_of_top_oss_repos:
-        try:
-            pr_analysis(repo, \
-                        f'./data/{repo.replace("/", "_")}_renamed_prs.txt', \
-                        f'./data/{repo.replace("/", "_")}_long_desc_prs.txt', \
-                        f'./data/{repo.replace("/", "_")}_metadata.json')
-        except Exception as e:
-            print(f'Failed to get renamed PRs for {repo}')
-            print(e)
-            continue
-
-
+    main()

@@ -1,0 +1,22 @@
+deps: update histogram to 0.11.7
+V16.x staging
+src: make realm binding data store weak
+deps: update undici to 5.22.0
+tools: move update-npm to dep updaters
+doc: create maintaining folder for deps
+sea: add option to disable the experimental SEA warning
+[v19.x] src: bootstrap Web [Exposed=*] APIs in the shadow realm
+v18.16.0 release proposal
+test: migrate message tests to use assertSnapshot
+tools: update eslint to 8.38.0
+deps: update ICU to 73.1 final
+v19.9.0 proposal
+[v19.x backport] url: use ada::url_aggregator for parsing urls
+[v19.x backport] esm: increase test coverage of edge cases
+test: move more inspector sequential tests to parallel 
+test: migrate test runner message tests to snapshot
+tools: move update-acorn.sh to dep_updaters
+tools: move update-undici.sh to dep_updaters and create brotli maintaining md
+benchmark: differentiate whatwg and legacy url
+test: move test-shadow-realm-gc.js to known_issues
+permission: drop process.permission.deny

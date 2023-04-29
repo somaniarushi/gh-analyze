@@ -1,0 +1,2 @@
+Organize Issue Services better
+Fixes #164583. Renames diffAlgo name smart to legacy and experimental to advanced.

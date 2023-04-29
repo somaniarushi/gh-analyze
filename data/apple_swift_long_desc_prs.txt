@@ -1,0 +1,1 @@
+Revert "Enable mem2reg of enum types "
